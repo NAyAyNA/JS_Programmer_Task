@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: lavender;
+}
+
+.header {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.heading {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.btn {
+    width: 35px;
+    height: 35px;
+    color: blue;
+    background-color: lavender;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+}
+
+.btn:disabled{
+    color: grey;
+}
+
+#delete {
+    color: red;
+}
+
+.btns {
+    display: flex;
+}
+
+#table-container{
+    padding-bottom: 50px;
+}
+
+table{
+    border-collapse: collapse; 
+    text-align: left;
+    border: none;
+}
+
+table tr {
+    height: 40px;
+}
+
+table th {
+    padding: 10px;
+    padding-bottom: 40px;
+    border: 1px solid #ccc;
+}
+
+table td{
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative; 
+    white-space: nowrap; 
+    overflow: hidden;
+    width: auto;
+    max-width: 270px;
+}
+
+tr.selected td {
+    background-color: #ccc;
+}
+
+table td input {
+    display: inline-block;
+    width: 70%;
+    max-width: 100%; 
+    height: 100%;
+    border: 1px solid #ccc; 
+    margin: 0; 
+}
+
+table td input:focus {
+    border-color: blue; 
+    background-color: white; 
+    outline: none; 
+}
+
+table td.selected {
+    background-color: white; 
+}
+
+tr.selected {
+    background-color: transparent; 
+}
+
+.checkmark i {
+    color: lightgray; 
+    font-size: 18px;
+}
+
+tr.selected .checkmark i {
+    color: blue; 
+}
+        
+
+
